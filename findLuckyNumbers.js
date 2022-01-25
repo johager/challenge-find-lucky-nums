@@ -10,7 +10,7 @@ function luckyNum(n){
     let luckyNum = []
     while (luckyNum.length < n) {
         let num = Math.floor(Math.random() * 10)
-        if (!luckyNum.includes(num)) {
+        if (num > 0 && !luckyNum.includes(num)) {
             luckyNum.push(num)
         }
     }
